@@ -1,0 +1,168 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth; /* Rolagem suave ao clicar nos links */
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f9fa; /* Fundo cinza bem claro */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- CABEÇALHO --- */
+        header {
+            background-color: #d90429; /* Vermelho apetitoso e profissional */
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* --- NAVEGAÇÃO --- */
+        nav {
+            background-color: #2b2d42; /* Azul escuro elegante */
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffb703; /* Amarelo no hover */
+        }
+
+        /* --- CONTEÚDO PRINCIPAL --- */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+            padding-top: 60px; /* Espaço para a navbar fixa não cobrir o título */
+            margin-top: -60px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #d90429;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #ffb703;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* 1 coluna no celular */
+            gap: 20px;
+        }
+
+        /* Telas maiores (tablets e computadores) */
+        @media (min-width: 768px) {
+            .menu-grid {
+                grid-template-columns: 1fr 1fr; /* 2 colunas */
+            }
+        }
+
+        /* --- CARTÕES DOS ITENS --- */
+        .menu-item {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 10px;
+        }
+
+        .item-name {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #2b2d42;
+        }
+
+        .item-price {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #2a9d8f; /* Verde para destacar o preço */
+        }
+
+        .item-desc {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        /* --- RODAPÉ --- */
+        footer {
+            background-color: #2b2d42;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366; /* Verde do WhatsApp */
+            color: white;
+            text-decoration: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #1ebe57;
+        }
